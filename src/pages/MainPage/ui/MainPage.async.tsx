@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-const MainPageAsync = React.lazy(() => new Promise((resolve) => {
-    //@ts-ignore
-    setTimeout(() => resolve(import('./MainPage')) , 3000)
-}));
-export default MainPageAsync;
+const MainPageAsync = React.lazy(async () => await new Promise((resolve) => {
+  // @ts-expect-error
+  setTimeout(() => { resolve(import('./MainPage')) }, 3000)
+}))
+export default MainPageAsync
