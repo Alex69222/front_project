@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "standard-with-typescript",
@@ -45,7 +46,9 @@ module.exports = {
         "@typescript-eslint/no-floating-promises": "warn",
         "@typescript-eslint/naming-convention": "off",
         "@typescript-eslint/ban-ts-comment": "off",
-        "i18next/no-literal-string": ["error", {markupOnly: true}]
+        "i18next/no-literal-string": ["error", {markupOnly: true}],
+        "semi": "off",
+        "@typescript-eslint/semi": ["error"]
     },
     "settings": {
         "react": {
