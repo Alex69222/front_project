@@ -47,8 +47,10 @@ module.exports = {
         "@typescript-eslint/naming-convention": "off",
         "@typescript-eslint/ban-ts-comment": "off",
         "i18next/no-literal-string": ["error", {markupOnly: true}],
-        "semi": "off",
-        "@typescript-eslint/semi": ["error"]
+        // "semi": "off",
+        // "@typescript-eslint/semi": ["error"],
+        "max-len": ["error", {code: 100, ignoreComments: true}]
+
     },
     "settings": {
         "react": {
